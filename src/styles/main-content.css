@@ -90,3 +90,35 @@
     border-radius: 40px;
 }
 
+.playlist-container{
+    height: 68vh;
+    padding-top: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #121212;
+}
+
+#result-playlists{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.playlist{
+    margin: 24px;
+}
+
+.playlist #greeting{
+    color: var(--text-base-light);
+    margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.playlist .session{
+    color: var(--text-base-light);
+    font-weight: 700;
+    font-size: 24px;
+}
