@@ -1,7 +1,6 @@
-// DOM (DOCUMENT OBJECT MODEL) -> REPRESENTAÇÃO DE UM DOCUMENTO
 const searchInput = document.getElementById('search-input');
-const resultArtist = document.getElementById('result-artist')
-const resultPlaylist =  document.getElementById('result-playlists')
+const resultArtist = document.getElementById("result-artist");
+const resultPlaylist = document.getElementById('result-playlists');
 
 function requestApi(searchTerm) {
     const url = `http://localhost:3000/artists?name_like=${searchTerm}`
@@ -11,6 +10,7 @@ function requestApi(searchTerm) {
 }
 
 function displayResults(result) {
+    resultPlaylist.classList.add("hidden")
     const artistName = document.getElementById('artist-name');
     const artistImage = document.getElementById('artist-img');
 
@@ -19,8 +19,7 @@ function displayResults(result) {
         artistImage.src = element.urlImg;
     });
 
-    resultArtist.classList.remove('hidden')
-
+    resultArtist.classList.remove('hidden');
 }
 
 document.addEventListener('input', function () {
